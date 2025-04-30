@@ -29,9 +29,9 @@ async function main() {
 app.put("/chats/:id", async (req, res) => {
 
     let {id} = req.params;
-    let {newMessage: edited_msg } = req.body;
+    let {newMessage: edited_msg } = req.body; //Destructuring assignment happens from right to left. It extracts newMessage from req.body and assigns it to edited_msg.(like this: edited_msg = req.body.newMessage;)
     console.log(edited_msg);
-    let updatedChat = await Chat.findByIdAndUpdate(id, {msg: edited_msg}, {new: true});
+    let updatedChat = await Chat.findByIdAndUpdate(id, {msg: edited_msg}, {new: true});//({new: true}: Return the updated(new) document instead of the old one.)
     console.log(updatedChat);
     res.redirect("/chats");
 
