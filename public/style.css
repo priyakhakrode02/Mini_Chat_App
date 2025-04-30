@@ -19,3 +19,35 @@ body {
     border-radius: 8px;
     
 }
+
+.btn1{
+
+    background-color: rgb(0, 92, 251);;
+    color: white;
+    border-radius: 20px;
+    height: 40px;
+    width: 80px;
+    border: none;
+    
+
+}
+.btn1:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.edit_btn{
+
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    height: 25px;
+    width: 50px;
+    border: none;
+}
+.edit_btn:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
