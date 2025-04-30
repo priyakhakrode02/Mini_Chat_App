@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Chats</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+    <h2>Are you Sure ? you want to Delete this Chat</h2>
+    <p><b>Chat Id: <%= chat._id %> </b></p>  
+
+    <form method="post" action="/chats/<%= chat._id %>?_method=DELETE">
+        <div class = "delete-chat-box">
+            <p>From : <i><%= chat.from %></i></p><br/>
+            <div class="delete-msg">
+                <p>Message: <%= chat.msg %></p><br />
+            </div>
+            <p>Received By: <i><%= chat.to %></i></p><br/>
+            <hr />
+            <button class="del-btn">Delete</button>
+        </div><br /><br />
+        
+    </form>
+</body>
+</html>
