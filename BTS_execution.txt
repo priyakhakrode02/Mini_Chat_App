@@ -1,5 +1,6 @@
 Understanding the Two Delete Buttons: 
 
+
 My Application has two delete buttons, and each one triggers a different process: 
 1️⃣ Delete button in index.ejs → Takes the user to a confirmation page (delete.ejs). 
 2️⃣ Delete button in delete.ejs → Actually deletes the chat from the database.
